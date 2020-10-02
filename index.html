@@ -1,248 +1,317 @@
 <!DOCTYPE html>
 <html>
-<head>	
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <title>Wendy Sung</title>
-</head>
-<body data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Wendy Sung</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbarResponsive" data-offset="0">
     <!-- background -->
     <div class="header">
-         <!-- navbar -->
-        <div id="title-background"></div>
-        <nav class="navbar fixed-top navbar-expand-lg text-white">
-            <div>
-                <a class="navbar-brand" href="#">WS</a>
-               
+      <!-- navbar -->
+      <div id="title-background"></div>
+      <nav class="navbar fixed-top navbar-expand-lg text-white">
+        <div>
+          <a class="navbar-brand" href="#">WS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="WendySungResume.pdf" download="Wendy Sung Resume"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- title -->
+      <div class="head-Title">
+        <div class="head-container">
+          <div class="header-top">
+            <div class="nameIntro">
+              <p><b>Hello! I'm Wendy.</b></p>
             </div>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#aboutMe">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="WendySungResume.pdf" download="Wendy Sung Resume">Resume</a>
-                </li>
-              </ul>
+            <div class="img-cropper">
+              <img id="me" src="me.PNG" alt="Me" />
             </div>
-        </nav>
-         <!-- title -->
-        <div class="head-Title">
-		<div class="head-container">
-		    <div class="header-top">
-		      <div class="nameIntro">
-			<p><b>Hello! I'm Wendy.</b></p>
-		      </div>
-		      <div class="img-cropper">
-			<img id ="me" src ="me.PNG" alt="Me">
-		      </div>
-		      <p id="intro-lg"><span style="font-weight:600" >humanist</span> <br>designer & coder <br>passionate about working <br>with others to solve <br>social issues</p>
-		      <p id="intro-sm"><span style="font-weight:600" >humanist</span> designer & coder passionate about <br>working with others to solve social issues</p>
-		    </div>
-		    <div class="header-bottom">
-		      <p><b>Hello! <br>I'm Wendy.</b></p>
-		    </div>
-          	</div>  
-	</div>
+            <p id="intro-lg">
+              <span style="font-weight: 600">humanist</span> <br />designer &
+              coder <br />passionate about working <br />with others to solve
+              <br />social issues
+            </p>
+            <p id="intro-sm">
+              <span style="font-weight: 600">humanist</span> designer & coder
+              passionate about <br />working with others to solve social issues
+            </p>
+          </div>
+          <div class="header-bottom">
+            <p>
+              <b>Hello! <br />I'm Wendy.</b>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!---Projects-->
     <section id="projects">
+      <div class="section-heading">
+        <h3 class="pageName">&#128221; Projects &#128221;</h3>
+      </div>
 
-        <div class="section-heading">
-            <h3 class="pageName"> &#128221; Projects &#128221;</h3>
-        </div>
+      <!--Filter Buttons-->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn" onclick="filterSelection('ux/ui')">UX/UI</button>
+        <button class="btn" onclick="filterSelection('swe')">SWE</button>
+      </div>
 
-        <!--Filter Buttons-->
-        <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                <button class="btn" onclick="filterSelection('ux/ui')"> UX/UI</button>
-                <button class="btn" onclick="filterSelection('swe')"> SWE</button>
+      <!---Filter cards-->
+      <div class="container">
+        <div class="filterDiv swe">
+          <a href="https://wwwthewomens-network.squarespace.com">
+            <img
+              class="card-img"
+              src="https://static1.squarespace.com/static/5e802af05234e755946e7e50/t/5ec1ad863ca6b4722cf2a0ae/1596040572124/?format=1500w"
+              alt="Card image cap"
+            />
+            <div class="card-text">
+              <h5>
+                <b>Data Autamation & Web developing</b> | The Women's Network
+              </h5>
+              <p class="card-description">
+                As a Data Analyst Intern, I created new automated email system
+                and databases for TWN, as well as coded its new internship
+                product.
+              </p>
+              <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+              <span class="badge badge-pill badge-warning">JavaScript</span>
+            </div>
+          </a>
         </div>
-            
-        <!---Filter cards-->
-        <div class="container">
-                <div class="filterDiv swe">
-                    <a href="https://wwwthewomens-network.squarespace.com">
-                        <img class="card-img" src="https://static1.squarespace.com/static/5e802af05234e755946e7e50/t/5ec1ad863ca6b4722cf2a0ae/1596040572124/?format=1500w" alt="Card image cap">
-                        <div class="card-text">
-                            <h5><b>Data Autamation & Web developing</b> | The Women's Network</h5>
-                            <p class="card-description">As a Data Analyst Intern, I created new automated email system and databases for TWN, as well as coded its new internship product.</p>
-                            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
-                            <span class="badge badge-pill badge-warning">JavaScript</span>
-                        </div>
-                    </a> 
-                </div>
-                <div class="filterDiv ux/ui">
-                  <a href="https://columbiavirtualcampus.com/">
-                      <img class="card-img" src="CVC.jpeg" alt="Card image cap">
-                      <div class="card-text">
-                          <h5><b>User Experience Designer</b> | Columbia Virtual Campus</h5>
-                          <p class="card-description">Led and collaborated with 5 other designers in various iterative design projects - conducting user testing, lo-fi/hi-fi prototyping and wire-framing.</p>
-                          <span class="badge badge-pill badge-secondary">HTML/CSS</span>
-                          <span class="badge badge-pill badge-info">Figma</span>
-                          <span class="badge badge-pill badge-danger">illustrator</span>
-                      </div>
-                  </a> 
-              </div>
-	      <div class="filterDiv ux/ui">
-                <a href="#">
-                     <img class="card-img" src="mindset+.jpeg" alt="mindset+">
-                    <div class="card-text">
-                        <h5><b>Product Designer</b> | Mindset+</h5>
-                        <p class="card-description">Designed an app that helps users discover productivity through focusing on small task-completions with a mental-wellness mindset.</p>
-                        <span class="badge badge-pill badge-info">Figma</span>
-                    </div>
-                </a> 
-              </div> 
-              <div class="filterDiv ux/ui swe">
-                <a href="#">
-                     <img class="card-img" src="personalproject.jpeg" alt="Card image cap">
-                    <div class="card-text">
-                        <h5><b>Web Developer</b> | Personal Project</h5>
-                        <p class="card-description">Coded my portfolio website to capture my work and personality.</p>
-                        <span class="badge badge-pill badge-secondary">HTML/CSS</span>
-                        <span class="badge badge-pill badge-info">Figma</span>
-                        <span class="badge badge-pill badge-warning">JavaScript</span>
-                    </div>
-                </a> 
-              </div>  
-	      <div class="filterDiv swe">
-                <a href="https://wendysung.github.io/emojiQuiz/">
-                     <img class="card-img" src="emojiQuiz.jpeg" alt="emojiQuiz">
-                    <div class="card-text">
-                        <h5><b>Web Developer</b> | Emoji Quiz</h5>
-                        <p class="card-description">Coded an Emoji Quiz site where users submit answers and are given scores.</p>
-                        <span class="badge badge-pill badge-secondary">HTML/CSS</span>
-                        <span class="badge badge-pill badge-warning">JavaScript</span>
-                    </div>
-                </a> 
-              </div>  
+        <div class="filterDiv ux/ui">
+          <a href="https://columbiavirtualcampus.com/">
+            <img class="card-img" src="CVC.jpeg" alt="Card image cap" />
+            <div class="card-text">
+              <h5><b>User Experience Designer</b> | Columbia Virtual Campus</h5>
+              <p class="card-description">
+                Led and collaborated with 5 other designers in various iterative
+                design projects - conducting user testing, lo-fi/hi-fi
+                prototyping and wire-framing.
+              </p>
+              <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+              <span class="badge badge-pill badge-info">Figma</span>
+              <span class="badge badge-pill badge-danger">illustrator</span>
+            </div>
+          </a>
         </div>
+        <div class="filterDiv ux/ui">
+          <a href="#">
+            <img class="card-img" src="mindset+.jpeg" alt="mindset+" />
+            <div class="card-text">
+              <h5><b>Product Designer</b> | Mindset+</h5>
+              <p class="card-description">
+                Designed an app that helps users discover productivity through
+                focusing on small task-completions with a mental-wellness
+                mindset.
+              </p>
+              <span class="badge badge-pill badge-info">Figma</span>
+            </div>
+          </a>
+        </div>
+        <div class="filterDiv ux/ui swe">
+          <a href="#">
+            <img
+              class="card-img"
+              src="personalproject.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-text">
+              <h5><b>Web Developer</b> | Personal Project</h5>
+              <p class="card-description">
+                Coded my portfolio website to capture my work and personality.
+              </p>
+              <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+              <span class="badge badge-pill badge-info">Figma</span>
+              <span class="badge badge-pill badge-warning">JavaScript</span>
+            </div>
+          </a>
+        </div>
+        <div class="filterDiv swe">
+          <a href="https://wendysung.github.io/emojiQuiz/">
+            <img class="card-img" src="emojiQuiz.jpeg" alt="emojiQuiz" />
+            <div class="card-text">
+              <h5><b>Web Developer</b> | Emoji Quiz</h5>
+              <p class="card-description">
+                Coded an Emoji Quiz site where users submit answers and are
+                given scores.
+              </p>
+              <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+              <span class="badge badge-pill badge-warning">JavaScript</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
-	
-  <!---AboutME-->
-  <section id="aboutMe">
-    <div class="section-heading">
-      <h3 class="pageName">&#128302; About Me &#128302;</h3>
-    </div>
-    <div class="profile">
-      <div class="profile-left">
-        <img id ="me2" src="me.PNG" alt="Wendy Sung">
-      </div>
-      <div class="profile-right">
-        <div class="profile-intro">
-          <h4>Hello.</h4>
-          <h5>My name is Wendy.</h5>  
-        </div>
-        
-        <p>I am a <b>self-motivated humanist designer</b> who is eager to find a place in the world of <b>art, design</b> and <b>technology</b>.
-        <br><br>Currently a rising sophomore at <b>Barnard College of Columbia University</b> in NYC.</p>
-        <br>
-        <p id="facts">3 facts about me:</p>
-        <ul>
-            <li>&nbsp;&nbsp;&nbsp;1. I am based around the world! &#127961; Taipei, Shanghai & NYC</li>
-            <li>&nbsp;&nbsp;&nbsp;<spam id="Photography">2. Photography</spam> &#128248; introduced to me the connection between Art & Tech</li>
-            <li>&nbsp;&nbsp;&nbsp;3. I have a passion for <spam id="Matcha">Matcha &#127861;</spam></li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <!---Footer-->
-  <footer>
-    <div class="footer">
-      <div class="footer-title">
-        <p>Interested in working together?</p>
-        <h3><b>Let's Connect!</b></h3>
+    <!---AboutME-->
+    <section id="aboutMe">
+      <div class="section-heading">
+        <h3 class="pageName">&#128302; About Me &#128302;</h3>
       </div>
-      <nav >
-        <ul class="socialMediaLinks">
+      <div class="profile">
+        <div class="profile-left">
+          <img id="me2" src="me.PNG" alt="Wendy Sung" />
+        </div>
+        <div class="profile-right">
+          <div class="profile-intro">
+            <h4>Hello.</h4>
+            <h5>My name is Wendy.</h5>
+          </div>
+
+          <p>
+            I am a <b>self-motivated humanist designer</b> who is eager to find
+            a place in the world of <b>art, design</b> and <b>technology</b>.
+            <br /><br />Currently a rising sophomore at
+            <b>Barnard College of Columbia University</b> in NYC.
+          </p>
+          <br />
+          <p id="facts">3 facts about me:</p>
+          <ul>
             <li>
-               <a href="mailto:cs3858@columbia.edu"><u>email</u></a>
+              &nbsp;&nbsp;&nbsp;1. I am based around the world! &#127961;
+              Taipei, Shanghai & NYC
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/wendy-sung-4605541a7/"><u>Linkedin</u></a>
+              &nbsp;&nbsp;&nbsp;<spam id="Photography">2. Photography</spam>
+              &#128248; introduced to me the connection between Art & Tech
             </li>
-	    <li>
+            <li>
+              &nbsp;&nbsp;&nbsp;3. I have a passion for
+              <spam id="Matcha">Matcha &#127861;</spam>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!---Footer-->
+    <footer>
+      <div class="footer">
+        <div class="footer-title">
+          <p>Interested in working together?</p>
+          <h3><b>Let's Connect!</b></h3>
+        </div>
+        <nav>
+          <ul class="socialMediaLinks">
+            <li>
+              <a href="mailto:cs3858@columbia.edu"><u>email</u></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/wendy-sung-4605541a7/"
+                ><u>Linkedin</u></a
+              >
+            </li>
+            <li>
               <a href="https://github.com/wendysung"><u>GitHub</u></a>
             </li>
-            
-        </ul>
-    </nav>
-    </div>
-  </footer>
-
+          </ul>
+        </nav>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar.fixed-top");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
 
-$(function () {
-  $(document).scroll(function () {
-	  var $nav = $(".navbar.fixed-top");
-	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-	});
-});
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
 
-        
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
     </script>
-
-
-</body>
+  </body>
 </html>
