@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+
+#cvc-header {
+  background-color: rgb(167, 223, 255);
+}
+
+/*navbar */
+
+.navbar {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: normal;
+  background-color: rgb(167, 223, 255);
+}
+
+.navbar.fixed-top.scrolled {
+  background-color: blueviolet !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  margin-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.navbar-brand:hover {
+  font-weight: bold;
+  font-size: 50px;
+  color: black;
+  margin-left: 20px;
+}
+
+.collapse {
+  margin-right: 20px;
+}
+
+.nav-item {
+  padding-left: 100px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.nav-item a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+}
+
+/*header container */
+
+#headContainer {
+  margin-top: 66px;
+  padding-top: 50px;
+  font-family: "Eczar", serif;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#headContainer p {
+  margin: 0px;
+  font-size: 4.5vw;
+  text-align: center;
+}
+
+#headContainer img {
+  margin: 0px;
+  width: 50%;
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.2));
+}
+
+/*basic section css */
+.projectSection {
+  padding: 100px 20vw;
+}
+
+.projectSection p {
+  font-size: 2vh;
+  line-height: 3vh;
+  margin: 0;
+}
+.sectionTitle {
+  display: block;
+}
+
+.sectionTitle p {
+  font-family: Eczar;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  letter-spacing: 0.03em;
+  color: #ffc061;
+}
+
+.subheading {
+  font-family: Eczar;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 80px;
+  color: #000000;
+  float: left;
+}
+
+.col {
+  padding: 0;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  height: 100%;
+  display: table-row;
+}
+
+.col-left,
+.col-right {
+  width: 45%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*intro container */
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#intro p {
+  background-color: white;
+  margin: 0;
+}
+
+#intro #goal {
+  font-size: 4vh;
+  line-height: 7vh;
+}
+
+/*problem container */
+#problem {
+  background-color: #3b5998;
+  margin: 0;
+}
+
+#problem .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*#problemDescription {
+    width: 30vw;
+  }*/
+
+#hmw {
+  display: flex;
+  flex-direction: column;
+
+  float: left;
+
+  font-weight: 700;
+}
+
+#hmw div {
+  width: 30wv;
+}
+/*userResearch container */
+#userResearch {
+  margin: 0;
+}
+
+#userResearch .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*virtualSpaceIntro container */
+#virtualSpaceIntro {
+  background-color: #3b5998;
+  margin: 0;
+}
+
+#virtualSpaceIntro .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: white;
+}
+
+#virtualSpaceIntro .subheading {
+  color: white;
+}
+
+/*iterated solution container */
+#iteratedSolutionIdeas {
+  margin: 0;
+}
+
+#iteratedSolutionIdeas .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.sectionBody .col {
+  flex-direction: column;
+}
+
+#marketingLayout {
+  width: 30vw;
+}
+
+/*prototyping ideas container */
+#prototypingIdeas {
+  margin: 0;
+}
+
+#prototypingIdeas .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*final Wireframes container */
+#finalWireframes {
+  background-color: #3b5998;
+  margin: 0;
+}
+
+#finalWireframes .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*pain point solutions container */
+#painPointSolutions {
+  margin: 0;
+}
+
+#painPointSolutions .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+/*pain point solutions container */
+#learning {
+  margin: 0;
+}
+
+#learning .sectionBody {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+hr {
+  width: 100%;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+  margin: 2.5rem 0;
+}
+
+#learning .subheading {
+  font-family: Eczar;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+/*footer*/
+.footer {
+  background-color: #ffc670;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.footer-title p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-title h3 {
+  margin: 5px;
+}
+
+.socialMediaLinks li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
