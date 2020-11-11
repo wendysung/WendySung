@@ -6,7 +6,7 @@
 
 body {
   background-color: white;
-  font-family:  "Rubik", "Open-sans"
+  font-family: "Rubik", "Open-sans";
   color: #ff9900;
   position: relative;
 }
@@ -109,7 +109,7 @@ h1 {
   align-items: center;
   width: 100%;
   justify-content: center;
-  font-family:  "Rubik", "Open-sans"
+  font-family: "Rubik", "Open-sans";
 }
 
 .nameIntro {
@@ -169,7 +169,8 @@ h1 {
     height: initial;
     justify-content: center;
     align-items: center;
-    text-align: center;font-family: "Eczar", serif;
+    text-align: center;
+    font-family: "Eczar", serif;
   }
 
   .header-top {
@@ -180,15 +181,13 @@ h1 {
     text-align: center;
     padding: 50px 20px;
   }
-  
 
   .header-top p {
     text-align: center;
     margin: 0;
-    font-family:  "Rubik", "Open-sans";
-    font-size:2vh;
+    font-family: "Rubik", "Open-sans";
+    font-size: 2vh;
   }
-
 
   .nameIntro {
     display: flex;
@@ -200,7 +199,6 @@ h1 {
     font-family: "Eczar", serif;
     font-size: 4vh;
   }
-
 
   #intro-lg {
     display: none;
