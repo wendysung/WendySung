@@ -18,6 +18,9 @@ h1 {
   height: 1.2;
 }
 
+h5 {
+  font-weight: 400;
+}
 /*navbar */
 
 .navbar {
@@ -362,7 +365,7 @@ h1 {
 
 #me2 {
   display: inline-block;
-  max-width: 25vw;
+  max-width: 20vw;
   height: auto;
   border-radius: 25%;
 }
